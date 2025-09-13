@@ -1,0 +1,44 @@
+*{
+   margin: 2px;
+   padding: 2px;
+   
+}
+
+#navbar{
+    width: 100%;
+    height: 85px;
+    border: 1px solid black;
+    background-color: rgb(187, 38, 38);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: coral;
+}
+
+#navbar img{
+    width: 100px;
+    height: 90%;
+    border-radius: 70%;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    gap: 25%;
+
+}
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    gap: 50px;
+}
+
+
+box{
+    
+}

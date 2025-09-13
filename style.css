@@ -1,0 +1,162 @@
+/* Reset & basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.site-header {
+  background: #222;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.site-header .logo h1 {
+  margin-left: 1rem;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.site-nav li {
+  margin-right: 1.5rem;
+}
+
+.site-nav a {
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.site-nav a.active,
+.site-nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* Hero */
+.hero {
+  background: url('images/hero-bg.jpg') center center/cover no-repeat;
+  color: #fff;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.hero .btn {
+  background: #007BFF;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+  background: #0056b3;
+}
+
+/* Services */
+.services {
+  display: flex;
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.service-item {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Portfolio */
+.portfolio {
+  margin-bottom: 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.project {
+  position: relative;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.project:hover img {
+  transform: scale(1.1);
+}
+
+.project-info {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  width: 100%;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project:hover .project-info {
+  opacity: 1;
+}
+
+/* Footer */
+.site-footer {
+  background: #222;
+  color: #ccc;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .site-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+}
